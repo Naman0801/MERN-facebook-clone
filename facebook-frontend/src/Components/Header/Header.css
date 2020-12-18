@@ -1,0 +1,89 @@
+.header {
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+    position: sticky;
+    background-color: #fff;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header__left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header__left > img {
+    height: 42px;
+}
+
+.header__input {
+    display: flex;
+    align-items: center;
+    background-color: #eff2f5;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 33px;
+}
+
+.header__input > input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    margin-left: 5px;
+}
+
+.header__center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.header__option {
+    padding: 5px 25px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+.header__option:hover {
+    border-radius: 10px;
+    background-color: #eff2f5;
+}
+
+.header__option .MuiSvgIcon-root {
+    color: gray;
+    transition: all 0.15s ease-in;
+    font-size: 1.7rem;
+}
+
+.header__option:hover > .MuiSvgIcon-root {
+    color: #2e81f4;
+}
+
+.header__option--active {
+    border-bottom: 4px solid #2e81f4;
+}
+
+.header__option--active .MuiSvgIcon-root {
+    color: #2e81f4;
+}
+
+.header__right {
+    display: flex;
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.header__info > h4 {
+    margin-left: 10px;
+}
